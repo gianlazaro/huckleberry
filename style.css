@@ -11,6 +11,17 @@ body {
 
 /* Add styles here! */
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
 .max-width-wrapper {
   margin: 0 auto;
   padding: 100px 0;
@@ -27,11 +38,14 @@ main {
 }
 .intro-chunk {
   padding: 20px;
+  max-width: 400px;
+  line-height: 1.5;
 }
 
 .card {
   background: white;
   padding: 10px 20px;
+  line-height: 1.5;
 }
 
 strong {
@@ -39,10 +53,16 @@ strong {
 }
 
 .indented-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
   width: fit-content;
   padding: 10px 30px;
   border-bottom: 5px solid hsl(45deg, 100%, 40%);
   margin: 0;
   margin-left: -30px;
   background: hsl(45deg, 100%, 50%);
+}
+
+.card p {
+  font-size: 1em;
 }
